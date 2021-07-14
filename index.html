@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>NPM</title>
 </head>
 <body>
     <header>
         <div>
           <div>
-            <img src="images/black-heart.png" alt="black heart" weight=150px height=150px/>
+            <img class="blackHeart" src="images/black-heart.png" alt="black heart">
             <span> Nifty Penguin Magic </span>
           </div>
           <nav>
@@ -25,17 +24,20 @@
           </nav>
         </div>
       
-        <div>
+        <div class="searchRow">
+          <img class="npmLogo" src="images/npm-logo.png" alt="npm logo">
+          <form class="searchRow" action="/register" method="post">
+            <div>
+              <label for="search"></label>
+              <input type="search" placeholder="Search packages">
+            </div>
+            <div>
+              <button type="submit">Search</button>
+            </div>
+          </form>
           <div>
-            <img src="images/npm-logo.png" alt="npm logo">
-            <img src="images/magnifying-glass.png" alt="magnifying-glass">
-            <form>
-              <input type="text" id="search" name="search" value="search packages">
-              <input type="submit" value="search">
-            </form>
-          </div>
-          <div>
-            <a href="#">Join</a> <a href="#">Log In</a>
+            <a href="#">Join</a>
+            <a href="#">Log In</a>
           </div>
         </div>
       </header>
