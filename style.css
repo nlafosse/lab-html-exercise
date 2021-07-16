@@ -40,31 +40,105 @@ nav a {
 }
 
 .searchRow {
-    padding: 0 25px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 45px;
 }
 
 .searchRow form {
-  color: rgba(0, 0, 0, .05)
+  color: rgba(0, 0, 0, .05);
 }
 
 .searchRow input[type=search] {
   background-image: url(images/magnifying-glass.png);
-  background-size: contain;
+  background-size: 20px;
   background-repeat: no-repeat;
+  background-position: left center;
   background-color: rgba(220, 221, 235, 0.411);
   border: none;
-  width: 1000px;
+  width: 100%;
   padding: 8px 40px;
 }
 
-.searchRow button {
+.searchButton {
     background-color: #fb3e44;
-    border: 2px solid #fb3e44;
-    font-size: 10px; 
+    border: 1px solid #fb3e44;
+    font-size: 12px; 
     color: white;
     padding: 8px;
+}
+
+.loginButtons {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fb3e44;
+    font-size: 12px; 
+    color: white;
+    height: 40px;
+
+}
+
+.searchJoin {
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 12px; 
+    padding: 10px;
+}
+
+.searchLogin {
+  background-color: white;
+  border: 1px solid black;
+  font-size: 12px; 
+  padding: 10px;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 500px;
+  background-color: rgba(232,217,217,.3);
+  text-align: center;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+.intro {
+  width: 400px;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+.buttonPlans {
+  color: white;
+  background-color: #FB3B49;
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  border: 1px solid #fb3e44;
+  font-size: 12px; 
+  padding: 12px 15px;
+  width: 140px;
+}
+
+.buttonJoin {
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 12px; 
+  padding: 12px 15px;
+  width: 140px;
 }
